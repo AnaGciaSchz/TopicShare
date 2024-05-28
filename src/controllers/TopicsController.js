@@ -43,6 +43,7 @@ class TopicsController {
         const id = req.params.id;
         try {
             const topic = await this.topicsService.deleteById(id);
+            res.status(204)
             res.json(topic);
         } catch (err) {
             if (err instanceof TopicNotExist) {

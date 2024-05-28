@@ -37,7 +37,6 @@ class TopicsService {
     }
 
     async topicExists(id) {
-        console.log(id)
         if (!await this.topicsRepository.getById(id)) {
             throw new TopicNotExist(`Topic with id ${id} does not exist`);
         }
