@@ -46,25 +46,33 @@ return {
     },
     openPopup() {
     this.preMadeMessage = 
-        `My opinion on the topic: ${this.text}
+        `🌟📣 My opinion on the topic: ${this.text} 📣🌟
 
-        Introduction
+🔍 Introduction 🔍
 
-        [You can use our sources to get inspiration: 
-        
-        ${this.sources.join(',\n')}]
+--------
+Start with an intriguing fact or question to grab attention.
 
-        My Take
+You can use our sources to get inspiration:
+${this.sources.map(source => `- ${source}`).join('\n')}
+--------
 
-        [Insert opinion]
+🎯 My Take 🎯
 
-        Conclusion
+--------
+Share your unique perspective or insights on the topic. Use storytelling or personal experiences to connect with the audience.
+--------
 
-        [Insert conclusion]
+💡 Conclusion 💡
 
-        You can also share your opinion! Go to TopicShare and share your opinion on this topic! 
+--------
+Summarize your key points and leave the audience with something to think about or take action on.
+--------
 
-        #TopicShare ${this.hashtags.join(' ')}`
+Express your opinion on TopicShare and join the conversation! Let's make a difference together!
+
+#TopicShare ${this.hashtags.join(' ')}`
+
         this.popupVisible = true;
     },
     closePopup() {
