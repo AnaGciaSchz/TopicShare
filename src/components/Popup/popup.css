@@ -42,6 +42,7 @@
     background-color: #eae7e7;
     border-radius: 8px;
     white-space: pre-wrap;
+    line-height: 1.4em;
   }
   
   .copyButton {

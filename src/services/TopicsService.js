@@ -4,6 +4,7 @@ const Topic = require('../models/Topic');
 class TopicsService {
     constructor() {
         this.topicsRepository = new TopicsRepository();
+        this.currentId="";
     }
     
     async getAll() {
@@ -33,6 +34,10 @@ class TopicsService {
         const ids = await this.topicsRepository.getIds();
         const index = Math.floor(Math.random() * ids.length);
         const randomId = ids[index];
+        while (randomId === this.currentId) {
+            randomId = ids[Math.floor(Math.random() * ids.length)];
+        } 
+        this.currentId= randomId;
         return await this.topicsRepository.getById(randomId);
     }
 
