@@ -1,5 +1,25 @@
 #app {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "webTitle"
+    "cardSection"
+    "sourcesSection"
+    "sourcesSection"
+    "footer";
     align-items: center;
+    margin-left:5%;
+    margin-right:10%;
+    margin-top: 2%;
+  }
+
+  .webTitle{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+  }
+
+  .footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eae7e7;
+    padding: 20px;
+    border-radius: 8px;
   }

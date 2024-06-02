@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <Card :text="textContent" :hashtags="cardHashtags" :sources=sources @refresh="handleRefresh"/>
-    <Sources :sources="sources"/>
-  </div>
+    <h1 class="webTitle"> Welcome to TopicShare</h1>
+    <Card class="cardSection":text="textContent" :hashtags="cardHashtags" :sources=sources @refresh="handleRefresh"/>
+    <Sources class="sourcesSection" :sources="sources"/>
+  <footer class="footer">
+    App prototype by <a href="https://github.com/AnaGciaSchz">@AnaGciaSchz</a> on GitHub
+    <address>
+    Written by <a href="mailto:anagciaschz@gmail.com">Ana 'anuskuskus' García</a>.<br>
+
+    Visit me at:<br>
+<a href="https://anuskuskus.me/">https://anuskuskus.me/</a>
+</address>
+  </footer>
+</div>
 </template>
 
 <script>

@@ -14,12 +14,11 @@
   .source {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #888888;
+    color: #333333;
   }
 
   .title {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #333333;
-    margin-top: -200px;
   }
