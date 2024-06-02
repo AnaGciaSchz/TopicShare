@@ -1,0 +1,55 @@
+.card-container {
+    display: grid;
+    grid-template-rows:3fr 1fr;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+  }
+  
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px; 
+    color: #888888;
+    margin: 0;
+  }
+  
+  .hashtags {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .hashtag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; 
+    color: #427742; 
+    margin-right: 10px; 
+  }
+  
+  .refresh-button {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333333;
+    transition: color 0.3s ease;
+    z-index: 1; 
+  }
+  
+  .refresh-button:hover {
+    color: #666666;
+  }
