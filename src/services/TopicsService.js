@@ -33,7 +33,7 @@ class TopicsService {
     async getRandomTopic() {
         const ids = await this.topicsRepository.getIds();
         const index = Math.floor(Math.random() * ids.length);
-        const randomId = ids[index];
+        let randomId = ids[index];
         while (randomId === this.currentId) {
             randomId = ids[Math.floor(Math.random() * ids.length)];
         } 
